@@ -26,14 +26,6 @@ st.write(
         font-size: 80px;
     }
     </style>
-    <div class="container">
-        <div class="img-container">
-            <img src="https://appetiser.com.au/wp-content/uploads/2019/03/Google-V8.png.webp" width="700" style="channels='RGB'">
-        </div>
-        <h1>V8 Engine</h1>
-        <p>Đây là nội dung của bạn.</p>
-        <!-- Thêm nội dung của bạn sau đây -->
-    </div>
     """,
     unsafe_allow_html=True
 )

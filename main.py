@@ -1,25 +1,4 @@
 import streamlit as st
-import fitz  # PyMuPDF
-from io import BytesIO
-
-
-# Hàm chuyển đổi từng trang PDF thành hình ảnh
-def pdf_to_images(pdf_file):
-    # Mở file PDF
-    doc = fitz.open(pdf_file)
-
-    # Danh sách để chứa các hình ảnh của các trang PDF
-    images = []
-
-    # Duyệt qua từng trang và chuyển đổi thành hình ảnh
-    for page_num in range(doc.page_count):
-        page = doc.load_page(page_num)  # Tải trang
-        pix = page.get_pixmap()  # Chuyển đổi trang thành hình ảnh
-        img_bytes = pix.tobytes()  # Chuyển hình ảnh thành bytes
-        images.append(img_bytes)
-
-    return images
-
 
 # Thiết lập cấu hình trang Streamlit
 st.set_page_config(

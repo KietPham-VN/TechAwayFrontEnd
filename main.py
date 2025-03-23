@@ -64,7 +64,7 @@ with st.sidebar:
 tab1, tab2 = st.tabs(["Bài Đăng", "Demo"])
 
 with tab1:
-    st.markdown("<h2 style='color: #FFC81B;'>F-Code [Techaway 2024]</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color: #FFC81B;'>F-Code [Techaway 2025]</h2>", unsafe_allow_html=True)
     st.markdown("#### **F-Code authors:**")
     st.write("""
         - *Phạm Hoàng Tuấn - SE200947*

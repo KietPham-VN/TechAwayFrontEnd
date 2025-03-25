@@ -22,7 +22,7 @@ st.write(
     .img-container {
         margin-bottom: 20px;
     }
-      h1 {
+    h1 {
         font-size: 80px;
     }
     </style>
@@ -32,21 +32,8 @@ st.write(
 
 # Sidebar
 with st.sidebar:
-    st.header("Nội dung bài viết")
-    source_vid = st.sidebar.write("""
-    <style>
-        .toc {
-            background-color: #0E1117;
-            border-radius: 10px;
-        }
-        .toc p {
-            font-size: 15px;
-            margin: 0;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 2;
-        }
-    </style>
+    st.header("Mục lục")
+    st.markdown("""
     <div class="toc">
         <p>1. Lời mở đầu</p>
         <p>2. Tăng tốc lập trình với IDE hiệu quả</p>
@@ -56,10 +43,8 @@ with st.sidebar:
         <p>6. Thư viện hỗ trợ dự án React trở nên xịn sò hơn</p>
         <p>7. Cách làm 1 project FrontEnd hiệu quả</p>
         <p>8. Tổng kết</p>
-                                  
     </div>
     """, unsafe_allow_html=True)
-
 # Tab
 tab1, tab2 = st.tabs(["Bài Đăng", "Demo"])
 

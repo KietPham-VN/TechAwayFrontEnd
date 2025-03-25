@@ -46,17 +46,15 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
 # Tab
-tab1, tab2 = st.tabs(["Bài Đăng", "Demo"])
 
-with tab1:
-    st.markdown("<h2 style='color: #FFC81B;'>F-Code [Techaway 2025]</h2>", unsafe_allow_html=True)
-    st.markdown("#### **F-Code authors:**")
-    st.write("""
+st.markdown("<h2 style='color: #FFC81B;'>F-Code [Techaway 2025]</h2>", unsafe_allow_html=True)
+st.markdown("#### **F-Code authors:**")
+st.write("""
         - *Phạm Hoàng Tuấn - SE200947*
         - *Võ Đức Trí - SE204214*
     """)
 
-    st.markdown("""
+st.markdown("""
 ![Sprint](https://raw.githubusercontent.com/KietPham-VN/TechAwayFrontEnd/main/assets/images/content-images-0.jpg)
 ![Sprint](https://raw.githubusercontent.com/KietPham-VN/TechAwayFrontEnd/main/assets/images/content-images-1.jpg)
 ![Sprint](https://raw.githubusercontent.com/KietPham-VN/TechAwayFrontEnd/main/assets/images/content-images-2.jpg)
@@ -105,6 +103,3 @@ with tab1:
 ![Sprint](https://raw.githubusercontent.com/KietPham-VN/TechAwayFrontEnd/main/assets/images/content-images-45.jpg)
 ![Sprint](https://raw.githubusercontent.com/KietPham-VN/TechAwayFrontEnd/main/assets/images/content-images-46.jpg)
 """, unsafe_allow_html=True)
-
-with tab1:
-    st.markdown("This Project Doesn't Have A Demo", unsafe_allow_html=True)
